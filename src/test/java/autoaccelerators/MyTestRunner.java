@@ -6,13 +6,13 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
 
-        features = {"src/test/resources/autoaccelerators/"},
+        features = {"src/test/resources/autoaccelerators/LoginPage.feature"},
         glue = {"autoaccelerators"},
         plugin = {"pretty",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "timeline:test-output-thread/"
+                "timeline:test-output-thread/",
+                "rerun:target/rerunFailed.txt"
         }
-
 )
 
 public class MyTestRunner extends AbstractTestNGCucumberTests {
