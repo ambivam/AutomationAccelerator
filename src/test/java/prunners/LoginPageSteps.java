@@ -1,4 +1,4 @@
-package com.accelerator.stepdefinitions;
+package prunners;
 
 import com.accelerator.factory.DriverFactory;
 import com.accelerator.pages.LoginPage;

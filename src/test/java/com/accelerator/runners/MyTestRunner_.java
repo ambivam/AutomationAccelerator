@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources/features/"},
+        features = {"src/test/resources/prunners/"},
         glue = {"com.accelerator.stepdefinitions", "com.accelerator.hooks"},
         plugin = {"pretty",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
@@ -16,6 +16,6 @@ import io.cucumber.junit.CucumberOptions;
 
 )
 
-public class MyTestRunner {
+public class MyTestRunner_ {
 
 }
