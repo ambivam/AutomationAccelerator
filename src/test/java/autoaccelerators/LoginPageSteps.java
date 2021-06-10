@@ -1,4 +1,4 @@
-package com.accelerator.stepdefinitions;
+package autoaccelerators;
 
 import com.accelerator.factory.DriverFactory;
 import com.accelerator.pages.LoginPage;

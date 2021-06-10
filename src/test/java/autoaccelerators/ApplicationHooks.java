@@ -1,4 +1,4 @@
-package com.accelerator.hooks;
+package autoaccelerators;
 
 import com.accelerator.factory.DriverFactory;
 import com.accelerator.util.ConfigReader;
