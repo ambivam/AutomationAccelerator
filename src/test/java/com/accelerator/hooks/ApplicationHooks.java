@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import java.net.MalformedURLException;
 import java.util.Properties;
 
 public class ApplicationHooks {
@@ -25,7 +26,7 @@ public class ApplicationHooks {
     }
 
     @Before(order = 1)
-    public void launchBrowser(){
+    public void launchBrowser() throws MalformedURLException {
         String browserName = prop.getProperty("browser");
         driverFactory = new DriverFactory();
         driver = driverFactory.init_driver(browserName);
